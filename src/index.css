@@ -8,3 +8,7 @@ body {
   /* dark mode */
   background: gray;
 }
+
+ul {
+  list-style: none;
+}
