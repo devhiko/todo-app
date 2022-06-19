@@ -3,7 +3,11 @@ import { useState } from 'react'
 import { v1 } from 'uuid'
 
 const TodoForm = ({ setTodos }) => {
-  const [todoItem, setTodoItem] = useState('');
+
+  // todo item state
+  const [todoItem, setTodoItem] = useState('')
+
+  // submit evt
   const handleSubmit = (e) => {
     e.preventDefault();
     const newTodo = todoItem;
@@ -26,7 +30,7 @@ const TodoForm = ({ setTodos }) => {
         type="submit"
         value="Add Todo" />
     </form>
-  );
+  )
 }
 
 export default TodoForm;

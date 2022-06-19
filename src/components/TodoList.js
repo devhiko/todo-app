@@ -1,4 +1,6 @@
 const TodoList = ({ todos, setTodos }) => {
+
+  // delete todo
   const handleDelete = (id) => {
     const deletedTodo = todos.filter(todo => todo.id !== id);
     setTodos(deletedTodo);
@@ -16,7 +18,7 @@ const TodoList = ({ todos, setTodos }) => {
         )}
       </ul>
     </div>
-  );
+  )
 }
 
 export default TodoList;

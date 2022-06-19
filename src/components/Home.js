@@ -1,10 +1,12 @@
-import { useState } from 'react';
+import { useState } from 'react'
 import '../styles/Home.css'
-import TodoForm from './TodoForm';
-import TodoList from './TodoList';
+import TodoForm from './TodoForm'
+import TodoList from './TodoList'
 
 const Home = () => {
-  const [todos, setTodos] = useState([]);
+
+  // todo state
+  const [todos, setTodos] = useState([])
   return (
     <div className="Home">
       {todos.length ?
